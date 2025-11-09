@@ -5,6 +5,14 @@
 ![Features](https://img.shields.io/badge/Features-Image%20%7C%20Video%20%7C%20Live%20Detection-blue)
 ![Stack](https://img.shields.io/badge/Stack-React%20%2B%20Python%20%2B%20YOLO-orange)
 
+## 🎓 About This Project
+
+This is a multidisciplinary project developed by 4th year students at the **Higher School of Computer Science, Sidi Bel Abbes**, specializing in **Artificial Intelligence and Data Science**. The project combines computer vision, deep learning, and web development to create a practical solution for road hazard detection.
+
+## 📝 Project Description
+
+CurbCheck AI is an intelligent road safety system that detects potholes and speed bumps in real-time using a custom-trained YOLO (You Only Look Once) deep learning model. The application provides three detection modes: image upload, video processing, and live webcam detection. Built with a modern React frontend and FastAPI backend, it offers high accuracy detection with an intuitive user interface for road infrastructure monitoring.
+
 ## 🌟 Features
 
 - **📸 Image Detection** - Upload images to detect road hazards with bounding boxes
@@ -185,7 +193,7 @@ python test_setup.py
 
 ## 📄 License
 
-This project was created using Lovable.dev
+MIT License
 
 ## 🤝 Contributing
 
@@ -205,4 +213,4 @@ If you encounter issues:
 
 ---
 
-Made with ❤️ using React, FastAPI, and YOLO
+**CurbCheck AI** - 4th Year Project | Higher School of Computer Science, Sidi Bel Abbes | AI & Data Science Specialization
