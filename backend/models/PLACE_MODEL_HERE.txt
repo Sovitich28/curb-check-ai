@@ -1,0 +1,149 @@
+===============================================================================
+                    📍 WHERE TO PLACE YOUR MODEL FILE
+===============================================================================
+
+⚠️  IMPORTANT: Your best.pt file MUST go in this exact location:
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                                                                         │
+│  Full Path (Windows):                                                   │
+│                                                                         │
+│  C:\Users\shift\Desktop\Folder\curb-check-ai\backend\models\best.pt    │
+│                                                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+
+===============================================================================
+                           VISUAL DIRECTORY GUIDE
+===============================================================================
+
+Your project structure should look like this:
+
+curb-check-ai/
+│
+├── backend/                          👈 This folder was created
+│   ├── models/                       👈 Model directory
+│   │   └── best.pt                   👈 PUT YOUR FILE HERE! ⭐
+│   │
+│   ├── main.py
+│   ├── config.py
+│   └── ... (other files)
+│
+├── src/
+│   └── ... (frontend files)
+│
+└── README.md
+
+===============================================================================
+                         HOW TO PLACE YOUR FILE
+===============================================================================
+
+Option 1: Using File Explorer (Easy)
+────────────────────────────────────
+
+1. Open File Explorer
+2. Navigate to: C:\Users\shift\Desktop\Folder\curb-check-ai\backend\models
+3. Copy your best.pt file into this folder
+4. Done! ✅
+
+Option 2: Using Command Line
+─────────────────────────────
+
+Open PowerShell and run:
+
+    Copy-Item "C:\path\to\your\best.pt" "C:\Users\shift\Desktop\Folder\curb-check-ai\backend\models\best.pt"
+
+(Replace the first path with where your model currently is)
+
+Option 3: Drag & Drop
+──────────────────────
+
+1. Open File Explorer to: C:\Users\shift\Desktop\Folder\curb-check-ai\backend\models
+2. Locate your best.pt file
+3. Drag and drop it into the models folder
+4. Done! ✅
+
+===============================================================================
+                              VERIFY IT WORKED
+===============================================================================
+
+After copying, check that the file exists:
+
+1. Open PowerShell/Terminal
+2. Run:
+
+    cd C:\Users\shift\Desktop\Folder\curb-check-ai\backend
+    python test_setup.py
+
+3. You should see:
+
+    ✓ Model file found: models\best.pt
+    ✓ Size: XX.XX MB
+    ✓ Model loaded successfully!
+
+===============================================================================
+                            FILE REQUIREMENTS
+===============================================================================
+
+Your best.pt file should:
+  ✓ Be a YOLO model file (.pt extension)
+  ✓ Be trained on pothole and speed_bump classes
+  ✓ Be from Ultralytics YOLO (YOLOv8 or compatible)
+  ✓ Typically be 6-20 MB in size
+
+===============================================================================
+                           WHAT IF IT DOESN'T WORK?
+===============================================================================
+
+Problem: "Model file not found"
+Solution: Double-check the path:
+  - Make sure it's in: backend\models\best.pt
+  - Make sure the filename is exactly: best.pt
+  - Make sure you're in the right directory
+
+Problem: "Failed to load model"
+Solution:
+  - Make sure it's a valid YOLO .pt file
+  - Check that it's not corrupted
+  - Try re-exporting from your training
+
+Problem: "Wrong classes"
+Solution:
+  - Your model should have: pothole, speed_bump
+  - If different, update the frontend code
+
+===============================================================================
+                              QUICK TEST
+===============================================================================
+
+After placing your file, test it:
+
+1. cd backend
+2. python test_setup.py
+3. Look for these messages:
+   ✓ Model file found
+   ✓ Model loaded successfully
+   ✓ Model classes: ['pothole', 'speed_bump']
+
+If you see all three ✓, you're ready to go!
+
+===============================================================================
+                             NEXT STEPS
+===============================================================================
+
+Once your model is in place:
+
+1. ✅ Model placed in backend\models\best.pt
+2. ✅ Run: python backend\test_setup.py (verify)
+3. ✅ Run: python backend\main.py (start server)
+4. ✅ Run: npm run dev (start frontend)
+5. ✅ Open: http://localhost:8080
+6. ✅ Upload an image and test detection!
+
+===============================================================================
+
+Questions? Check these files:
+  • backend\MODEL_SETUP.md - Detailed model setup guide
+  • SETUP.md - Complete setup instructions
+  • QUICK_REFERENCE.md - Command reference
+
+===============================================================================
